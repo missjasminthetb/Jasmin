@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.09)50%, rgba(0,0,0,0.09)50%),url(../pictures/backgroundpic.jpg);
+    background-size: cover;
+}
+nav{
+    background-color: rgba(220, 20, 60, 0.767);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px ;
+    box-shadow: 1px 1px 5px rgb(107, 0, 50);
+}
+.ham {
+    display: none;
+}
+h2 {
+    font-size: 30px;
+} 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    margin: 0px 25px;
+    font-size: 20px;
+}
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+section {
+    padding: 10px;
+}
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: rgba(107, 5, 25, 0.767);
+}
+strong {
+    font-size: larger;
+    font-style: italic;
+}
+.welcome {
+    font-size: 30px;
+    font-style: italic;
+}
+.title{
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline double pink;
+    text-transform: capitalize;
+}
+.text {
+    text-align: center;
+    font-style: oblique;
+}
+.date {
+    line-height: 20px;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+    text-align: end;
+    font-style: oblique;
+}
+footer {
+    margin: 10px 10px;
+}
+/* media queries */
+@media screen and (max-width:700px){
+    .nav-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+     }
+     .ham{
+      display: block;
+      cursor: pointer;
+     }
+     .hidden {
+      display: none;
+     }
+     nav {
+      display: block;
+     }
+     nav ul {
+      background-color: pink;
+      display: block;
+      width: 100%;
+      padding: 5px 15px;
+    }
+    
+}

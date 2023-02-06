@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: rgba(220, 20, 60, 0.767);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 5px rgb(107, 0, 50);
+}
+h2 {
+  font-size: 30px;
+}
+h2 a {
+  color: white;
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  margin: 0px 25px;
+  font-size: 20px;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+form {
+  padding: 10px 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label {
+  margin: 10px 5px;
+  display: block;
+}
+form button {
+  display: block;
+  padding: 10px 5px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Arial;
+  border: none;
+  background-color: pink;
+
+}
+form input{
+    width: 100%;
+  padding: 5px 5px;
+}
+form input:focus {
+  border: none;
+  outline: 2px solid pink;
+}
+.label p {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial;
+  margin: 5px 0;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: rgba(107, 5, 25, 0.767);
+}
+.jasmine-flower {
+    width: 300px;
+    height: 300px;
+}
+
+.jasmine-flower img{
+    width: 100%;
+    height: 100%;
+}
+.boxa {
+    display: flex;
+    width: 600px;
+    box-shadow: 1px 1px 5px rgba(240, 45, 120, 0.301);
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ham {
+  display: none;
+}
+
+/* media queries */
+@media screen and (max-width:700px){
+  .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+   .ham{
+    display: block;
+    cursor: pointer;
+   }
+   .hidden {
+    display: none;
+   }
+   nav {
+    display: block;
+   }
+   nav ul {
+    background-color: pink;
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .boxa {
+    width: 50%;
+    display: block;
+  }
+  .jasmine-flower {
+    width: 100%;
+    height: 100%;
+}
+form {
+  padding: 10px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label {
+  margin: 10px 5px;
+  display: block;
+}
+form button {
+  display: block;
+  padding: 10px 5px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Arial;
+  border: none;
+}
+form input{
+  width: 100%;
+  height: 20%;
+  padding: 5px 5px;
+}
+.label p {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial;
+  margin: 5px 0;
+}
+}

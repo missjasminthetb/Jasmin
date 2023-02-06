@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: rgba(220, 20, 60, 0.767);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 5px rgb(107, 0, 50);
+}
+.ham {
+  display: none;
+}
+h2 {
+  font-size: 30px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  margin: 0px 25px;
+  font-size: 20px;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+h2 a {
+  text-decoration: none;
+  color: white;
+}
+form {
+  margin: 20px auto;
+  width: 80%;
+}
+.label {
+  display: block;
+  margin: 15px 0;
+}
+.label p {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.label input {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+  border-radius: 20px;
+  outline: none;
+}
+input:focus {
+  border: none;
+  outline: 2px solid pink;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: rgba(220, 20, 60, 0.767);
+  color: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.message {
+  display: block;
+  margin: 15px 0;
+}
+.message p {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.message input {
+  width: 100%;
+  border: 0;
+  padding: 70px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+  border-radius: 20px;
+  outline: none;
+}
+.message input:focus {
+  border: none;
+  outline: 2px solid pink;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: rgba(107, 5, 25, 0.767);
+}
+/* media queries */
+@media screen and (max-width:700px){
+  .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   }
+   .ham{
+    display: block;
+    cursor: pointer;
+   }
+   .hidden {
+    display: none;
+   }
+   nav {
+    display: block;
+   }
+   nav ul {
+    background-color: pink;
+    display: block;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  
+}
